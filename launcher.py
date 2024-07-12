@@ -61,6 +61,13 @@ root.title("Game Launcher")
 root.geometry("480x500")  # Adjusted window size
 root.configure(bg='#2e2e2e')
 
+# Center the window
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+x = (screen_width // 2) - (480 // 2)
+y = (screen_height // 2) - (500 // 2)
+root.geometry(f"480x500+{x}+{y}")
+
 # Set custom icon
 icon_path = os.path.join(os.getcwd(), 'Other', 'LauncherImage.ico')
 root.iconbitmap(icon_path)

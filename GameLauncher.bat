@@ -1,1 +1,2 @@
-py launcher.py
+@echo off
+start /min /B pythonw launcher.py
